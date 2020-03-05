@@ -46,11 +46,11 @@ public class DemoWebShopTest {
 		HomePage hp=new HomePage(driver);
 		hp.clickRegister();
 		RegistrationPage rp=new RegistrationPage(driver);
-		rp.performRegistration("Sukumar", "Muthu", "sukumar.muthukumar@gmail.com", "Yash123", "Yash123");
+		rp.performRegistration("Venkat", "Raman", "Venkat.raman@gmail.com", "Ven123", "Ven123");
 		LoginPage lp=new LoginPage(driver);
-		lp.enterCredentialsAndLogin("sukumar.muthukumar@gmail.com", "Yash123");
+		lp.enterCredentialsAndLogin("Venkat.raman@gmail.com", "Yash123");
 		DemoWebShopHome home=new DemoWebShopHome(driver);
-		home.validateAccountName("sukumar.muthukumar@gmail.com");
+		home.validateAccountName("Venkat.raman@gmail.com");
 		home.clickElectronicsAndCellPhone();
 		DemoWebShopCellPhones cellPhone=new DemoWebShopCellPhones(driver);
 		cellPhone.validateCellPhoneAndAddProduct();
